@@ -3,6 +3,7 @@ package com.agiles.uniconnect.model;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.Set;
 
@@ -21,8 +22,8 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    private Date joinDate;
-    private Date lastLogin;
+    private LocalDateTime joinDate;
+    private LocalDateTime lastLogin;
 
     @OneToMany
     private Set<StudyGroup> studyGroups;

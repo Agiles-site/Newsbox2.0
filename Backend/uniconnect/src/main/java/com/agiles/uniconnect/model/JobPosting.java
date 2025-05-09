@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "job_posting")
@@ -24,8 +24,8 @@ public class JobPosting {
     private String location;
     private String employmentType;
     private String salaryRange;
-    private LocalDate postedDate;
-    private LocalDate deadline;
+    private LocalDateTime postedDate;
+    private LocalDateTime deadline;
 
     private String description;
 

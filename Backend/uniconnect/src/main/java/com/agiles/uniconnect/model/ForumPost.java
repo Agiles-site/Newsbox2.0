@@ -1,11 +1,19 @@
 package com.agiles.uniconnect.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "forum_post")
+@AllArgsConstructor
+@NoArgsConstructor
+@Getter
+@Setter
 public class ForumPost {
 
     @Id
@@ -25,5 +33,5 @@ public class ForumPost {
     @ManyToOne
     private User author;
 
-    private LocalDateTime createdAt;
+    private LocalDateTime date;
 }
