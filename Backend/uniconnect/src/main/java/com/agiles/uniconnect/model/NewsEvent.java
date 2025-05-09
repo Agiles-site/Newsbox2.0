@@ -14,13 +14,13 @@ public class NewsEvent {
     private String title;
     private String content;
 
-    private String Organizer;
+    private String organizer;
     private String author;
 
     private LocalDateTime publishDate;
 
-    private int likes;
-    private int comments;
+    private int likeCount;
+    private int commentCount;
 
     private boolean isEvent;
 }

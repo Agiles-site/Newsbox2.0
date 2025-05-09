@@ -18,9 +18,9 @@ public class ForumPost {
     private boolean isPinned;
     private boolean isHot;
 
-    private int likes;
-    private int comments;
-    private int views;
+    private int likeCount;
+    private int commentCount;
+    private int viewCount;
 
     @ManyToOne
     private User author;
